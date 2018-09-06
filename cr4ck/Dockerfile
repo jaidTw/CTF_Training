@@ -11,5 +11,5 @@ RUN chown root:cr4ck /home/cr4ck/*
 RUN chown root:root /home/cr4ck
 RUN chmod 750 /home/cr4ck/cr4ck && chmod 740 /home/cr4ck/flag
 
-CMD sudo -u cr4ck socat tcp-l:5576,fork exec:/home/cr4ck/cr4ck
-EXPOSE 5576
+CMD sudo -u cr4ck socat tcp-l:8000,fork exec:/home/cr4ck/cr4ck
+EXPOSE 8000

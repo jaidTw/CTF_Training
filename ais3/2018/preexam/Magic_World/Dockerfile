@@ -10,5 +10,5 @@ RUN chown root:magic /home/magic/*
 RUN chown root:root /home/magic
 RUN chmod 750 /home/magic/Magic_World && chmod 740 /home/magic/flag.txt
 
-CMD cd /home/magic; sudo -u magic socat tcp-l:5575,fork exec:/home/magic/Magic_World
-EXPOSE 5575
+CMD cd /home/magic; sudo -u magic socat tcp-l:8000,fork exec:/home/magic/Magic_World
+EXPOSE 8000

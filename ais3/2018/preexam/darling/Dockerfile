@@ -10,5 +10,5 @@ RUN chown root:darling /home/darling/*
 RUN chown root:root /home/darling
 RUN chmod 750 /home/darling/darling && chmod 740 /home/darling/flag.txt
 
-CMD cd /home/darling; sudo -u darling socat tcp-l:5573,fork exec:/home/darling/darling
-EXPOSE 5573
+CMD cd /home/darling; sudo -u darling socat tcp-l:8000,fork exec:/home/darling/darling
+EXPOSE 8000

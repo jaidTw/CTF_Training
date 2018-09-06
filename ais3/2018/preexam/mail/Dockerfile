@@ -11,5 +11,5 @@ RUN chown root:root /home/mail_
 RUN chmod 750 /home/mail_/mail && chmod 740 /home/mail_/flag.txt
 
 CMD cd /home/mail_
-CMD cd /home/mail_; sudo -u mail_ socat tcp-l:5572,fork exec:/home/mail_/mail
-EXPOSE 5572
+CMD cd /home/mail_; sudo -u mail_ socat tcp-l:8000,fork exec:/home/mail_/mail
+EXPOSE 8000

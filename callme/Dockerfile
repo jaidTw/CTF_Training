@@ -10,5 +10,5 @@ RUN chown root:callme /home/callme/*
 RUN chown root:root /home/callme
 RUN chmod 750 /home/callme/callme && chmod 740 /home/callme/flag
 
-CMD sudo -u callme socat tcp-l:5566,fork exec:/home/callme/callme
-EXPOSE 5566
+CMD sudo -u callme socat tcp-l:8000,fork exec:/home/callme/callme
+EXPOSE 8000

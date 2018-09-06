@@ -10,5 +10,5 @@ RUN chown root:calc /home/calc/*
 RUN chown root:root /home/calc
 RUN chmod 750 /home/calc/calc && chmod 740 /home/calc/flag.txt
 
-CMD cd /home/calc; sudo -u calc socat tcp-l:5571,fork exec:/home/calc/calc
-EXPOSE 5571
+CMD cd /home/calc; sudo -u calc socat tcp-l:8000,fork exec:/home/calc/calc
+EXPOSE 8000

@@ -13,5 +13,5 @@ RUN chown root:craxme /home/craxme/*
 RUN chown root:root /home/craxme
 RUN chmod 750 /home/craxme/craxme && chmod 740 /home/craxme/flag /home/craxme/craxflag /home/craxme/realflag
 
-CMD sudo -u craxme socat tcp-l:5577,fork exec:/home/craxme/craxme
-EXPOSE 5577
+CMD sudo -u craxme socat tcp-l:8000,fork exec:/home/craxme/craxme
+EXPOSE 8000

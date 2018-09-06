@@ -10,5 +10,5 @@ RUN chown root:justfmt /home/justfmt/*
 RUN chown root:root /home/justfmt
 RUN chmod 750 /home/justfmt/justfmt && chmod 740 /home/justfmt/flag.txt
 
-CMD cd /home/justfmt; sudo -u justfmt socat tcp-l:5574,fork exec:/home/justfmt/justfmt
-EXPOSE 5574
+CMD cd /home/justfmt; sudo -u justfmt socat tcp-l:8000,fork exec:/home/justfmt/justfmt
+EXPOSE 8000

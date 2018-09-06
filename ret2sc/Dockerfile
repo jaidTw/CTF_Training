@@ -11,5 +11,5 @@ RUN chown root:ret2sc /home/ret2sc/*
 RUN chown root:root /home/ret2sc
 RUN chmod 750 /home/ret2sc/ret2sc && chmod 740 /home/ret2sc/flag
 
-CMD sudo -u ret2sc socat tcp-l:5567,fork exec:/home/ret2sc/ret2sc
-EXPOSE 5567
+CMD sudo -u ret2sc socat tcp-l:8000,fork exec:/home/ret2sc/ret2sc
+EXPOSE 8000

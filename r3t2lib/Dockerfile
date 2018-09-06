@@ -12,5 +12,5 @@ RUN chown root:r3t2lib /home/r3t2lib/*
 RUN chown root:root /home/r3t2lib
 RUN chmod 750 /home/r3t2lib/r3t2lib && chmod 740 /home/r3t2lib/r3t2lib.c /home/r3t2lib/flag
 
-CMD sudo -u r3t2lib socat tcp-l:5569,fork exec:/home/r3t2lib/r3t2lib
-EXPOSE 5569
+CMD sudo -u r3t2lib socat tcp-l:8000,fork exec:/home/r3t2lib/r3t2lib
+EXPOSE 8000
