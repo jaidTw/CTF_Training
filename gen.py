@@ -15,6 +15,7 @@ CHALLENGES = {
     'magicworld': ('ais3/2018/preexam/Magic_World', 5575),
     'cr4ck': ('cr4ck', 5576),
     'craxme': ('craxme', 5577),
+    'fmtfun4u': ('fmtfun4u', 5578),
 }
 
 
